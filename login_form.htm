@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>메뉴</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link rel="stylesheet" type="text/css" href="./member/ie4css.css">
+<script language=javascript>
+function CopyID () {
+	var Form = document.form1;
+	a = Form.id.value;
+	top.location.href="./member/member.cgi?action=modify&number=" + a;
+}
+
+function clearField(field){
+	if (field.value == field.defaultValue) {
+	field.value = "";
+	}
+}
+function checkField(field){
+	if (field.value == "") {
+	field.value = field.defaultValue;
+	}
+}
+
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+      <form name="form1" action="./member/member.cgi" method="post" target="_top">
+        
+  <table width="170" border="1" bgcolor="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#304498" bordercolordark="#FFFFFF" cellpadding="3" cellspacing="0" align=center>
+    <tr bgcolor="#304498" bordercolor="#304498"> 
+      <td align="center"><font color="#FFFFFF" size="2"><b>회원 로그인</b></font></td>
+    </tr>
+    <tr> 
+      <td> 
+        <div align="right"> <font size="2"><b> 
+          <input type="hidden" name="action" value="login">
+          ID : </b> 
+          <input type="text" name="id" size="10" class="ipt2" value="guest" onBlur="checkField(this)" onFocus="clearField(this)">
+          <br>
+          </font></div>
+        <div align="right"><font size="2"><b>비밀번호 : </b> 
+          <input type="password" name="passwd" size="10" class="ipt2" value="guest" onBlur="checkField(this)" onFocus="clearField(this)">
+          <br>
+          <input type="submit" value="확인" class="btn2" name="submit">
+          <input type="button" value="가입" class="btn2" name="button" onClick="top.location.href='./member/agreement.htm'">
+          <input type="button" value="정보수정" class="btn2" name="button" onClick="CopyID()">
+          </font></div>
+      </td>
+    </tr>
+  </table>
+      </form>
+</body>
+</html>

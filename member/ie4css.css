@@ -1,0 +1,18 @@
+<!--//
+a:link {  color: #1361CA; text-decoration: none}
+a:visited {  color: #1361CA; text-decoration: none}
+a:active {  color: DARKBLUE; text-decoration: none}
+a:hover {  color: #FF9090; text-decoration: none}
+body,table,tr,td,p { font-family: "±¼¸²", "±¼¸²Ã¼", "µ¸¿ò", "µ¸¿òÃ¼"; font-size: 10pt; color: #000000}
+.input { background-color:"#F1F4FF"; border-width:"1"; border-color:"silver"; border-style:"solid"}
+.button { background-color:"#DDE2FF";border: 1, solid black;height:"20"}
+.ipt { background-color:"ivory"; border-width:"1"; border-color:"silver"; border-style:"solid"}
+.btn { background-color:"#EADEB2";border: 1, solid black;height:"20"}
+.ipt2 { background-color:"#FFFFFF"; border-width:"1"; border-color:"silver"; border-style:"solid"}
+.btn2 { background-color:"#FFFFFF";border: 1, solid black;height:"20"}
+.copy { font-size: 9pt}
+div.Offscreen     { display:none }
+span.Offscreen    { display:none }
+span.BulletNumber { font-size: x-large; font-weight: bold; color: #66ccff }
+span.BulletText   { font-size: x-small; font-weight: bold; letter-spacing: -1pt; text-align:center}
+//-->
